@@ -8,10 +8,10 @@ My first open source program
 
 ## Build & Installation
 ```shell
-    # set SMED_HELP  environment value
-    # Defualt path is '/usr/lib/X11'
-    $ export SMED_HELP=/usr/lib/X11 
-    $ xmkmf
-    $ make
-    $ make install
+# set SMED_HELP  environment value
+# Defualt path is '/usr/lib/X11'
+$ export SMED_HELP=/usr/lib/X11 
+$ xmkmf
+$ make
+$ make install
 ```
