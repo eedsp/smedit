@@ -1,0 +1,21 @@
+/* XPM */
+static char * cut_xpm[] = {
+"15 15 3 1",
+" 	s None	c None",
+".	c black",
+"X	c gray19",
+"     .   .     ",
+"     .   .     ",
+"     .   .     ",
+"     .   .     ",
+"     .. ..     ",
+"      . .      ",
+"      ...      ",
+"       .       ",
+"      X.X      ",
+"      X XXX    ",
+"    XXX X  X   ",
+"   X  X X  X   ",
+"   X  X  XX    ",
+"   X  X        ",
+"    XX         "};

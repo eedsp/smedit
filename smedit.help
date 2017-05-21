@@ -1,0 +1,167 @@
+SCCS ID = @(#)smedit.help 1.30 Software Membership 01/01/99
+
+Command			Movement
+===============================================================================
+		EDITOR COMMAND
+-------------------------------------------------------------------------------
+
+F1			Help
+Ctrl-S			File|Save
+Ctrl-O			File|Open
+F5			Search|Go to line...
+
+Alt-N			File|New
+Alt-W			File|Save As...
+Alt-Q			File|Quit
+Alt-D			Delete line
+
+Left			Moves the cursor left one column
+Right			Moves the cursor right one column
+Up			Moves the cursor up one line
+Down			Moves the cursor down one line
+
+Home			Moves to the start of a line
+End			Moves to the end of a line
+PgUp			Page Up
+PgDn			Page Down
+Enter			Inserts a new line with carriage return
+Tab			Inserts a tab
+BackSpace		Deletes the left character of cursor
+Delete			Deletes the right character of cursor
+
+Ctrl-Left		Moves one word left
+Ctrl-Right		Moves one word right
+Ctrl-Home		Moves to the start of a file
+Ctrl-End		Moves to the end of a file
+Ctrl-PgUp		Moves to the top of the text window
+Ctrl-PgDn		Moves to the bottom of the text window
+Ctrl-J			Deletes a word to the left of cursor
+Ctrl-Up			Scroll up one line
+Ctrl-Down		Scroll down one line
+Ctrl-T			Deletes a word to the right cursor
+Ctrl-N			Inserts a new line
+Ctrl-Z			Undo
+Ctrl-Y			Redo
+Ctrl-E			Deletes to end of the line
+Ctrl-U			Undo all edits
+Ctrl-C			Copy the selection to the clipboard
+Ctrl-X			Copy the selection to the clipboard and
+			remove the selected text
+Ctrl-V			Paste the selection from the clipboard
+Ctrl-/			Select All...
+Ctrl-\			Unselect...
+Ctrl-S			Search|Find
+Ctrl-R			Search|Replace
+F3			Search|Search again...
+Ctrl-;			Replace the selected pattern
+Ctrl->			Block indent
+Ctrl-<			Block unindent
+
+Ctrl-Q S		Moves to the start of a line
+Ctrl-Q D		Moves to the end of a line
+Ctrl-Q E		Moves to the top of the text window
+Ctrl-Q X		Moves to the bottom of the text window
+Ctrl-Q M		Moves to the mid of the text window
+Ctrl-Q R		Moves to the start of a file
+Ctrl-Q C		Moves to the end of a file
+Ctrl-Q P		Moves last cursor position
+Ctrl-Q Y		Delete to end of the line
+Ctrl-Q F		Search|Find
+Ctrl-Q A		Search|Replace
+Ctrl-Q [		pair matching
+Ctrl-Q ]		pair matching
+Ctrl-Q [0..9]		Go to place marker [0..9]
+
+Ctrl-K [0..9]		Set place marker [0..9]
+Ctrl-K B		Mark block begin
+Ctrl-K K		Mark block end
+Ctrl-K I		Block indent
+Ctrl-K U		Block unindent
+Ctrl-K H		Unselect the selected text
+Ctrl-K Y		Delete a selected text
+Ctrl-K S		Save the current file
+Ctrl-K P		Uppercase the selected text
+Ctrl-K L		Lowercase the selected text
+
+Shift-Left		Selects Block
+Shift-Right		Selects Block
+Shift-Up		Selects Block
+Shift-Down		Selects Block
+
+Alt-BackSpace		File|Undo
+Shift-Backspace		File|Redo
+Ctrl-Insert		Edit|Copy
+Shift-Delete		Edit|Cut
+Shift-Insert		Edit|Paste
+
+Again(L2)               Redo last edits
+Undo(L4)		Undo last edits
+Copy(L6)		Copy the selection to the clipboard
+Paste(L8)		Paste the selection from the clipboard
+Cut(L10)		copy the selection to the clipboard and
+			remove the selected text
+
+		EDITOR MENU
+-------------------------------------------------------------------------------
+
+File|New		New file
+File|Save		Save the current file
+File|List...		List filename of the past
+File|Open		Open file
+File|Save As...		Save a new filename
+File|Quit		Quit
+
+Edit|Undo		Undo last edits
+Edit|Redo		Redo
+Edit|Cut		Copy the selection to the clipboard and
+			remove the selected text
+Edit|Copy		Copy block
+Edit|Paste		Paste the selection from the clipboard
+Edit|Delete...		Delete the selected text
+Edit|Select All...	Select all file
+Edit|Unselect...	Unselect the selected text
+
+Search|Find		Display Dialog box to search pattern
+Search|Replace		Display Dialog box to search pattern
+			and to replace pattern
+Search|Find Next	Display Dialog box to search pattern
+Search|Go to line...	moves the cursor to the line number
+
+Option|Editor Preference...|Insert mode
+			Toggle Insert mode
+Option|Editor Preference...|Indent mode
+			Toggle Indnet mode
+Option|Editor Preference...|Use tab character
+			Toggle tab mode
+Option|Editor Preference...|Undo after save
+			Toggle undo after save
+Option|Editor Preference...|Show Matching
+			Show matching bracket if one is inserted
+Option|Editor Preference...|Pending delete
+			Toggle pending delete mode
+Option|Editor Preference...|Tab size
+			Set Tab size
+Option|Editor Preference...|Block indent
+			Set block indent size
+Option|File Preference...|Create backup file
+			Toggle create backup file
+Option|File Preference...|Trim Tailing space
+			Toggle trim Tailing space
+			when the file save
+Option|File Preference...|Backup Extension
+			set the backup file extension
+Option|Show Toolbar	Toggle show toolbar
+Option|Save Options.	Save options
+
+===============================================================================
+
+* A word is defined as a sequence of characters separated by one of
+  the following; space tab ( ) , ; . < > [ ] ^ ' * + - / $ # _ = | ~
+  ? " % & : @ \ { }
+* pair matching : ( ), [ ], { }, < >, /* */
+* editor start-up file : ~/.smeditrc
+-----------------------------------------------------------------------------
+
+	SM/Editor - Version 3
+	Copyright (C) Shiwon Cho
+            stsolaris_at_gmail.com

@@ -1,0 +1,23 @@
+/* XPM */
+static char * open_xpm[] = {
+"15 15 5 1",
+" 	s None	c None",
+".	c black",
+"X	c #D75CD75CD75C",
+"o	c white",
+"O	c #6DB66DB66DB6",
+"               ",
+"         ...   ",
+"        .   . .",
+"             ..",
+"  ...       ...",
+" .XoX......    ",
+" .oXoXoXoX.    ",
+" .XoXoXoXo.    ",
+" .oXoX.........",
+" .XoX.OOOOOOOO.",
+" .oX.OOOOOOOO. ",
+" .X.OOOOOOOO.  ",
+" ..OOOOOOOO.   ",
+" ..........    ",
+"               "};

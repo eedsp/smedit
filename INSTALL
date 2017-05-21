@@ -1,0 +1,23 @@
+This file describes how to install SM/Editor program
+
+PREREQUISITES
+    X-Windows Release 5 and Motif 1.2
+
+    SM/Editor has been compiled and tested on the following platforms:
+
+    Sun Sparc (SunOS 4.1.x/Solaris 2.x)
+
+INSTALLATION
+
+    You need X Window System 11 Release 5 and OSF/Motif 1.2
+    to install SM/Editor.
+
+1. Do "xmkmf".
+    > xmkmf
+2. make
+    > make
+3. Install
+    > make install
+4. set SMED_HELP  environment value
+   > SMED_HELP=/usr/lib/X11; export SMED_PATH
+   Defualt path is '/usr/lib/X11'

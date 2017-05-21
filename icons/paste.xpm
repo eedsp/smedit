@@ -1,0 +1,22 @@
+/* XPM */
+static char * paste_xpm[] = {
+"15 15 4 1",
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c #9E9E9A9A9E9E",
+"               ",
+"     ....      ",
+"  ....XX....   ",
+" .oo.X..X.oo.  ",
+" .o.XXXXXX.o.  ",
+" .o........o.  ",
+" .ooooo......  ",
+" .ooooo.XXXX.. ",
+" .ooooo.X..X.X.",
+" .ooooo.XXXX...",
+" .ooooo.X..XXX.",
+" .ooooo.XXXXXX.",
+" .ooooo.X....X.",
+"  ......XXXXXX.",
+"       ........"};

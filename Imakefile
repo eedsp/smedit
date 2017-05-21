@@ -1,0 +1,17 @@
+	DEFINES = 
+	XPATH	=
+XLIB	= -lXm -lXt -lX11 -lXpm 
+
+HELP_DIR = ${LIBDIR}
+
+SYS_LIBRARIES = ${XPATH} ${XLIB}
+	SRCS = main.c text.c list.c search.c strctrl.c dialog.c help.c 
+	OBJS = main.o text.o list.o search.o strctrl.o dialog.o help.o
+
+ComplexProgramTarget(smedit)
+AllTarget(smedit)
+
+InstallAppDefaults(smedit)
+InstallNonExec(smedit.help,${HELP_DIR})
+
+

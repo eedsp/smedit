@@ -1,0 +1,22 @@
+/* XPM */
+static char * new_xpm[] = {
+"15 15 4 1",
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c #DF7DDF7DDF7D",
+"               ",
+"  .......      ",
+"  .XXXXXo.     ",
+"  .XXXXX o.    ",
+"  .XXXXX Xo.   ",
+"  .XXXXX ....  ",
+"  .XXXXXX   .  ",
+"  .XXXXXXXXo.  ",
+"  .XXXXXXXXX.  ",
+"  .XXXXXXXXX.  ",
+"  .XXXXXXXXX.  ",
+"  .XXXXXXXXX.  ",
+"  .XXXXXXXXX.  ",
+"  .XXXXXXXXX.  ",
+"  ...........  "};

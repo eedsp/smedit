@@ -1,0 +1,35 @@
+SOURCES	= main.c text.c list.c search.c strctrl.c dialog.c help.c
+OBJECTS	= main.o text.o list.o search.o strctrl.o dialog.o help.o
+EXEC	= smedit
+
+INCLUDE	= -I/usr/include -I/usr/dt/include -I/usr/openwin/include
+LIBRARY	= -L/usr/lib -L/usr/dt/lib -L/usr/openwin/lib
+LIBS	= -lXm -lXt -lX11 -lXpm -lc
+CFLAGS	= -gstabs -ansi -Wall 
+CC	= gcc $(CFLAGS) 
+#CFLAGS	= -g 
+#CC	= cc $(CFLAGS)
+
+RM	= rm -f
+RM_CMD	= $(RM) *.CKP *.ln *.BAK *.bak *.o core errs ,* *~ *% *.a .emacs_* tags TAGS make.log MakeOut
+
+$(EXEC): $(OBJECTS)
+	$(CC) $(LIBRARY) -o $(EXEC) $(OBJECTS) $(LIBS)
+main.o: main.c text.h list.h search.h strctrl.h dialog.h help.h version.h
+	$(CC) $(INCLUDE) -c main.c
+text.o: text.c
+	$(CC) $(INCLUDE) -c text.c
+list.o: list.c
+	$(CC) $(INCLUDE) -c list.c
+search.o: pattern.c
+	$(CC) $(INCLUDE) -c search.c
+strctrl.o: strctrl.c
+	$(CC) $(INCLUDE) -c strctrl.c
+dialog.o: dialog.c
+	$(CC) $(INCLUDE) -c dialog.c
+help.o: help.c
+	$(CC) $(INCLUDE) -c help.c
+clean:
+	$(RM) $(EXEC)
+	$(RM) $(OBJECTS)
+	$(RM_CMD)

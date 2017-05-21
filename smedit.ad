@@ -1,0 +1,526 @@
+! @(#)smedit.ad 1.2 01/01/99
+!
+!  smedit.ad - part of SM/Editor program
+!
+*highlightThickness:			1
+*foreground:                                    #000000000000
+*background:                                    #ae00b200c300
+!
+*fontList:	-adobe-courier-medium-r-normal--12-120-75-75-m-70-ISO8859-1
+!
+*XmText*fontList:       -adobe-courier-medium-r-normal--12-120-75-75-m-70-ISO8859-1
+*XmTextField*fontList:       -adobe-courier-medium-r-normal--12-120-75-75-m-70-ISO8859-1
+!
+!	Main Menu Resources
+!
+*MainMenu*fontList:       -adobe-courier-bold-r-normal--12-120-75-75-m-70-ISO8859-1
+!*MainMenu*background:				#c0c0c0
+!*MainMenu*foreground:                      	Black
+*MainMenu*shadowThickness:			1
+*MainMenu*background:				#7c97d2
+*MainMenu*foreground:                      	White
+*MainMenu.marginHeight:				1
+*MainMenu.button_0.labelString:			File
+*MainMenu.button_0.mnemonic:			F
+*MainMenu.button_1.labelString:			Edit
+*MainMenu.button_1.mnemonic:			E
+*MainMenu.button_2.labelString:			Search
+*MainMenu.button_2.mnemonic:			S
+*MainMenu.button_3.labelString:			Options
+*MainMenu.button_3.mnemonic:			O
+*MainMenu.button_4.labelString:			Help
+*MainMenu.button_4.mnemonic:			H
+!
+!	File Menu Resource
+!
+*MainMenu*file_menu*tearOffModel:			TEAR_OFF_ENABLED
+*MainMenu*file_menu*shadowThickness:			1
+*MainMenu*file_menu*XmSeparatorGadget.shadowThickness:	2
+*MainMenu*file_menu*button_0.labelString:		New
+*MainMenu*file_menu*button_0.mnemonic:			N
+*MainMenu*file_menu*button_0.accelerator:		Alt<Key>N
+*MainMenu*file_menu*button_0.acceleratorText:		Alt-N
+!
+*MainMenu*file_menu*button_1.labelString:		Open...
+*MainMenu*file_menu*button_1.mnemonic:			O
+*MainMenu*file_menu*button_1.accelerator:		Ctrl<Key>O
+*MainMenu*file_menu*button_1.acceleratorText:		Ctrl-O
+!
+*MainMenu*file_menu*button_2.labelString:		Save
+*MainMenu*file_menu*button_2.mnemonic:			S
+*MainMenu*file_menu*button_2.accelerator:		Ctrl<Key>S
+*MainMenu*file_menu*button_2.acceleratorText:		Ctrl-S
+!
+*MainMenu*file_menu*button_3.labelString:		Save As...
+*MainMenu*file_menu*button_3.mnemonic:			A
+*MainMenu*file_menu*button_3.accelerator:		Alt<Key>W
+*MainMenu*file_menu*button_3.acceleratorText:		Alt-W
+!
+*MainMenu*file_menu*button_4.labelString:		Recent Files...
+*MainMenu*file_menu*button_4.mnemonic:			F
+!
+!
+*MainMenu*file_menu*button_5.labelString:		Quit
+*MainMenu*file_menu*button_5.mnemonic:			Q
+*MainMenu*file_menu*button_5.accelerator:		Alt<Key>Q
+*MainMenu*file_menu*button_5.acceleratorText:		Alt-Q
+!
+!	Pick Menu Resource
+!
+*MainMenu*pick_submenu*shadowThickness:			1
+!
+!	Edit Menu Resource
+!
+*MainMenu*edit_menu*tearOffModel:			TEAR_OFF_ENABLED
+*MainMenu*edit_menu*shadowThickness:			1
+*MainMenu*edit_menu*XmSeparatorGadget.shadowThickness:	2
+*MainMenu*edit_menu*button_0.labelString:		Undo
+*MainMenu*edit_menu*button_0.mnemonic:			U
+*MainMenu*edit_menu*button_0.accelerator:		~Shift Alt<Key>BackSpace
+*MainMenu*edit_menu*button_0.acceleratorText:		Alt-Backspace
+!
+*MainMenu*edit_menu*button_1.labelString:		Redo
+*MainMenu*edit_menu*button_1.mnemonic:			R
+*MainMenu*edit_menu*button_1.accelerator:		Shift<Key>BackSpace
+*MainMenu*edit_menu*button_1.acceleratorText:		Shift-Backspace
+!*MainMenu*edit_menu*button_1.accelerator:		Shift Alt<Key>BackSpace
+!*MainMenu*edit_menu*button_1.acceleratorText:		Shift-Alt-Backspace
+!
+*MainMenu*edit_menu*button_2.labelString:		Cut
+*MainMenu*edit_menu*button_2.mnemonic:			t
+!*MainMenu*edit_menu*button_2.accelerator:		Shift<Key>osfDelete
+*MainMenu*edit_menu*button_2.acceleratorText:		Shift-Delete
+!
+*MainMenu*edit_menu*button_3.labelString:		Copy
+*MainMenu*edit_menu*button_3.mnemonic:			C
+!*MainMenu*edit_menu*button_3.accelerator:		Ctrl<Key>osfInsert
+*MainMenu*edit_menu*button_3.acceleratorText:		Ctrl-Insert
+!
+*MainMenu*edit_menu*button_4.labelString:		Paste
+*MainMenu*edit_menu*button_4.mnemonic:			P
+!*MainMenu*edit_menu*button_4.accelerator:		Shift<Key>osfInsert
+*MainMenu*edit_menu*button_4.acceleratorText:		Shift-Insert
+!
+*MainMenu*edit_menu*button_5.labelString:		Delete
+*MainMenu*edit_menu*button_5.mnemonic:			D
+!
+*MainMenu*edit_menu*button_6.labelString:		Select All
+*MainMenu*edit_menu*button_6.mnemonic:			A
+!
+*MainMenu*edit_menu*button_7.labelString:		Unselect
+*MainMenu*edit_menu*button_7.mnemonic:			n
+!
+!	Search Menr Resource
+!
+*MainMenu*search_menu*tearOffModel:			TEAR_OFF_ENABLED
+*MainMenu*search_menu*shadowThickness:			1
+*MainMenu*search_menu*XmSeparatorGadget.shadowThickness:	2
+*MainMenu*search_menu*button_0.labelString:		Find...
+*MainMenu*search_menu*button_0.mnemonic:		F
+*MainMenu*search_menu*button_0.accelerator:		Ctrl<Key>F
+*MainMenu*search_menu*button_0.acceleratorText:		Ctrl-F
+!
+*MainMenu*search_menu*button_1.labelString:		Replace...
+*MainMenu*search_menu*button_1.mnemonic:		R
+*MainMenu*search_menu*button_1.accelerator:		Ctrl<Key>R
+*MainMenu*search_menu*button_1.acceleratorText:		Ctrl-R
+!
+*MainMenu*search_menu*button_2.labelString:		Find next
+*MainMenu*search_menu*button_2.mnemonic:		n
+*MainMenu*search_menu*button_2.accelerator:		<Key>F3
+*MainMenu*search_menu*button_2.acceleratorText:		F3
+!
+*MainMenu*search_menu*button_3.labelString:		Go to line...
+*MainMenu*search_menu*button_3.mnemonic:		G
+*MainMenu*search_menu*button_3.accelerator:		<Key>F5
+*MainMenu*search_menu*button_3.acceleratorText:		F5
+!
+!	Option Menu Resource
+!
+*MainMenu*option_menu*shadowThickness:			1
+*MainMenu*option_menu*XmSeparatorGadget.shadowThickness:	2
+*MainMenu*option_menu*button_0.labelString:		Editor Preferences...
+*MainMenu*option_menu*button_0.mnemonic:		E
+!
+*MainMenu*option_menu*button_1.labelString:		File Preferences...
+*MainMenu*option_menu*button_1.mnemonic:		F
+!
+*MainMenu*option_menu*button_2.selectColor:		#eeeee0
+*MainMenu*option_menu*button_2.indicatorSize:		13
+*MainMenu*option_menu*button_2.labelString:		Show Toolbar
+*MainMenu*option_menu*button_2.mnemonic:		S
+!
+*MainMenu*option_menu*button_3.labelString:		Save Options
+*MainMenu*option_menu*button_3.mnemonic:		O
+!
+!	Open Menu's Envmenu Reousrce
+!
+*MainMenu*option_editor*shadowThickness:				1
+*MainMenu*option_editor*XmSeparatorGadget.shadowThickness:		2
+*MainMenu*option_editor*XmToggleButtonGadget.selectColor:		#eeeee0
+*MainMenu*option_editor*XmToggleButtonGadget.indicatorSize:	13
+!
+*MainMenu*option_editor*button_0.labelString:	Insert mode
+*MainMenu*option_editor*button_0.mnemonic:		I
+!
+*MainMenu*option_editor*button_1.labelString:	Auto Indent mode
+*MainMenu*option_editor*button_1.mnemonic:		A
+!
+*MainMenu*option_editor*button_2.labelString:	Use tab character
+*MainMenu*option_editor*button_2.mnemonic:		e
+!
+*MainMenu*option_editor*button_3.labelString:	Undo after save
+*MainMenu*option_editor*button_3.mnemonic:		U
+!
+*MainMenu*option_editor*button_4.labelString:	Show matching brace
+*MainMenu*option_editor*button_4.mnemonic:		S
+!
+*MainMenu*option_editor*button_5.labelString:	Pending delete
+*MainMenu*option_editor*button_5.mnemonic:		P
+!
+*MainMenu*option_editor*button_6.labelString:	Tab size...
+*MainMenu*option_editor*button_6.mnemonic:		T
+!
+*MainMenu*option_editor*button_7.labelString:	Block indent...
+*MainMenu*option_editor*button_7.mnemonic:		B
+!
+!	Open Menu's Prefmenu Reousrce
+!
+*MainMenu*option_file*shadowThickness:				1
+*MainMenu*option_file*XmSeparatorGadget.shadowThickness:	2
+*MainMenu*option_file*XmToggleButtonGadget.selectColor:	#eeeee0
+*MainMenu*option_file*XmToggleButtonGadget.indicatorSize:	13
+!
+*MainMenu*option_file*button_0.labelString:	Create backup
+*MainMenu*option_file*button_0.mnemonic:	C
+!
+*MainMenu*option_file*button_1.labelString:	Autosave Environment
+*MainMenu*option_file*button_1.mnemonic:	A
+!
+*MainMenu*option_file*button_2.labelString:	Trim tailing spaces
+*MainMenu*option_file*button_2.mnemonic:	T
+!
+*MainMenu*option_file*button_3.labelString:	Backup Extension
+*MainMenu*option_file*button_3.mnemonic:	B
+!
+!	Help menu Resource
+!
+*MainMenu*help_menu*shadowThickness:			1
+*MainMenu*help_menu*XmSeparatorGadget.shadowThickness:	2
+*MainMenu*help_menu*button_0.labelString:		Contents...
+*MainMenu*help_menu*button_0.mnemonic:			K
+*MainMenu*help_menu*button_0.accelerator:		<Key>F1
+*MainMenu*help_menu*button_0.acceleratorText:		F1
+!
+*MainMenu*help_menu*button_1.labelString:		About...
+*MainMenu*help_menu*button_1.mnemonic:			A
+!
+!	Toolbar	Resources
+!
+!*toolbar*background:                                      #c0c0c0
+*new_b*labelString:					New
+!*new_b*background:					#c0c0c0
+!*new_b*foreground:					Black
+!
+*open_b*labelString:					Open
+!*open_b*background:					#c0c0c0
+!
+*save_b*labelString:					Save
+!*save_b*background:					#c0c0c0
+!
+*undo_b*labelString:					Undo
+!*undo_b*background:					#c0c0c0
+!
+*redo_b*labelString:					Redo
+!*redo_b*background:					#c0c0c0
+!
+*cut_b*labelString:					Cut
+!*cut_b*background:					#c0c0c0
+!
+*copy_b*labelString:					Copy
+!*copy_b*background:					#c0c0c0
+!
+*paste_b*labelString:					Paste
+!*paste_b*background:					#c0c0c0
+!
+*delete_b*labelString:					Delete
+!*delete_b*background:					#c0c0c0
+!
+*search_b*labelString:					Search
+!*search_b*background:					#c0c0c0
+!
+*bi_b*labelString:					Search
+!*bi_b*background:					#c0c0c0
+!
+*bu_b*labelString:					Search
+!*bu_b*background:					#c0c0c0
+!
+!
+!	PopUp Menu Resources
+!
+*popup_menu*shadowThickness:			1
+*popup_menu*XmSeparatorGadget.shadowThickness:	2
+!*popup_menu*fontList:				variable
+!*popup_menu*background:				#c0c0c0
+!*popup_menu*foreground:				Black
+!
+*popup_menu*label_0.labelString:		Edit
+!
+*popup_menu*button_0.labelString:		Undo...
+!
+*popup_menu*button_1.labelString:		Redo
+
+*popup_menu*button_2.labelString:		Cut
+!
+*popup_menu*button_3.labelString:		Copy
+!
+*popup_menu*button_4.labelString:		Paste
+!
+*popup_menu*button_5.labelString:		Delete
+!
+!	PopUp SubMenu Resources
+!
+*popup_submenu*shadowThickness:			1
+*popup_submenu*XmSeparatorGadget.shadowThickness:	2
+!*popup_submenu*fontList:			variable
+!*popup_submenu*background:			#c0c0c0
+!*popup_submenu*foreground:			Black
+!
+*popup_submenu*button_0.labelString:		Undo last edit
+!
+*popup_submenu*button_1.labelString:		Undo all edits
+!
+!	StatusLine Resources
+!
+*line_label.labelString:			line:
+*col_label.labelString:				col:
+*col_text.labelString:				0000
+*line_text.labelString:				0000
+!
+!	Text Widget Resource
+!
+*paned_w.shadowThickness:      			0
+!*text_w.foreground:				Black
+!*text_w.background:        			#eeeee0
+*text_w.rows:					25
+*text_w.columns:				80
+!
+!	Find & Replace DialogBox Resources
+!
+*SearchDialog.dialogTitle:			SM/Editor - Find/Replace
+!
+*MessageDialog.dialogTitle:			SM/Editor - Message
+!
+*FindOptionsLabel.labelString:			Options
+!
+*FindDirectionLabel.labelString:		Direction
+!
+*set_origin*shadowThickness:			1
+*set_origin*labelString:			Start:
+*set_origin.button_0.labelString:		From cursor
+*set_origin.button_1.labelString:		From beginning
+!
+*Toggle1.selectColor:			#eeeee0
+*Toggle1.labelString:			Case sensitive
+*Toggle2.selectColor:			#eeeee0
+*Toggle2.labelString:			Whole words only
+*Toggle3.selectColor:			#eeeee0
+*Toggle3.labelString:			Regular expression
+*Radio1.selectColor:			#eeeee0
+*Radio1.labelString:			Forward
+*Radio2.selectColor:			#eeeee0
+*Radio2.labelString:			Backward
+!
+*FindLabel.labelString:			Search for :
+*ReplaceLabel.labelString:		Replace with :
+!
+*FindB.marginWidth:			10
+!*FindB.background:			#c0c0c0
+!*FindB.foreground:			Black
+*FindB.labelString:			Find
+!
+*ReplaceB.marginWidth:			10
+!*ReplaceB.background:			#c0c0c0
+!*ReplaceB.foreground:			Black
+*ReplaceB.labelString:			Replace
+!
+*ReplaceAllB.marginWidth:		10
+!*ReplaceAllB.background:		#c0c0c0
+!*ReplaceAllB.foreground:     		Black
+*ReplaceAllB.labelString:     		Replace All
+!
+*CloseB.marginWidth:			10
+!*CloseB.background:			#c0c0c0
+!*CloseB.foreground:			Black
+*CloseB.labelString:			Close
+!
+!*FindText.background:			#eeeee0
+!*FindText.foreground:			Black
+*FindText.shadowThickness:		1
+*FindText.columns:			24
+*FindText.translations:			#override \n\
+		<Key>R13:               end-of-line()\n\
+                <Key>F27:               beginning-of-line()\n\
+                Ctrl<Key>U:		delete-previous-word()
+!
+!*ReplaceText.background:		#eeeee0
+!*ReplaceText.foreground:		Black
+*ReplaceText.shadowThickness:		1
+*ReplaceText.columns:			24
+*ReplaceText.translations:		#override \n\
+		<Key>R13:               end-of-line()\n\
+                <Key>F27:               beginning-of-line()\n\
+		<Key>U:			delete-previous-word()
+!
+!	DialogBox Resources
+!
+*OpenDialog.dialogTitle:		SM/Editor - Open
+*OpenDialog.okLabelString:		Open
+*OpenDialog.applyLabelString:		Open Directory
+!*OpenDialog*XmTextField.background:	#eeeee0
+!*OpenDialog*XmTextField.foreground:	Black
+!*OpenDialog*XmList.background:		#eeeee0
+!*OpenDialog*XmList.foreground:		Black
+!*OpenDialog*cancelButton.background:			#c0c0c0
+!*OpenDialog*cancelButton.foreground:			Black
+!
+*SaveAsDialog.dialogTitle:		SM/Editor - Save As...
+*SaveAsDialog.okLabelString:		Save
+*SaveAsDialog.applyLabelString:		Open Directory
+!*SaveAsDialog*XmTextField.background:	#eeeee0
+!*SaveAsDialog*XmTextField.foreground:	Black
+!*SaveAsDialog*XmList.background:	#eeeee0
+!*SaveAsDialog*XmList.foreground:	Black
+!
+*GoDialog.dialogTitle:			Go to Line...
+*GoDialog.selectionLabelString:		Line number :
+*GoDialog.okLabelString:		Go
+*GoDialog.cancelLabelString:		Close
+!*GoDialog*XmTextField.background:	#eeeee0
+!*GoDialog*XmTextField.foreground:	Black
+*GoDialog*XmTextField.translations:	#override \n\
+		<Key>R13:               end-of-line()\n\
+                <Key>F27:               beginning-of-line()\n\
+		<Key>U:                 delete-previous-word()
+!
+*TabSizeDialog.dialogTitle:			Tab Size
+*TabSizeDialog.selectionLabelString:		Enter the tab size:
+!*TabSizeDialog*XmTextField.background:		#eeeee0
+!*TabSizeDialog*XmTextField.foreground:       	 Black
+*TabSizeDialog*XmTextField.translations:	#override \n\
+		<Key>R13:               end-of-line()\n\
+                <Key>F27:               beginning-of-line()\n\
+		<Key>U:                 delete-previous-word()
+!
+*BlockDialog.dialogTitle:		Block Indent Size
+*BlockDialog.selectionLabelString:	Enter the block indent size:
+!*BlockDialog*XmTextField.background:	#eeeee0
+!*BlockDialog*XmTextField.foreground:    Black
+*BlockDialog*XmTextField.translations:	#override \n\
+		<Key>R13:               end-of-line()\n\
+                <Key>F27:               beginning-of-line()\n\
+		<Key>U:                 delete-previous-word()
+*BackupDialog.dialogTitle:		Backup Extension
+*BackupDialog.selectionLabelString:	Backup extension :
+!*BackupDialog*XmTextField.background:	#eeeee0
+!*BackupDialog*XmTextField.foreground:    Black
+*BackupDialog*XmTextField.translations:	#override \n\
+		<Key>R13:               end-of-line()\n\
+                <Key>F27:               beginning-of-line()\n\
+		<Key>U:                 delete-previous-word()
+!
+!
+*QuestionDialog.dialogTitle:		SM/Editor - Question
+!*QuestionDialog.background:		#c0c0c0
+!*QuestionDialog.foreground:		Black
+*QuestionDialog.okLabelString:		Yes
+*QuestionDialog.cancelLabelString:	No
+*QuestionDialog.helpLabelString:	Cancel
+!
+*overwriteQuestionDialog.dialogTitle:		SM/Editor - Question
+!*overwriteQuestionDialog.background:		#c0c0c0
+!*overwriteQuestionDialog.foreground:		Black
+*overwriteQuestionDialog.okLabelString:		Save
+!
+*ErrorDialog.dialogTitle:		SM/Editor - Error
+!*ErrorDialog.background:		#c0c0c0
+!*ErrorDialog.foreground:		Black
+!
+*AboutDialog.dialogTitle:		SM/Editor - About...
+!
+*HelpDialog.dialogTitle:		SM/Editor - Help
+*HelpDialog*XmScrolledWindow.spacing:		0
+!*HelpDialog*XmScrolledWindow*horizontalScrollBar*shadowThickness:	1
+!*HelpDialog*XmScrolledWindow*NverticalScrollBar*shadowThickness:	1
+*HelpDialog*helpText.highlightThickness:	1
+!*HelpDialog*helpText.foreground:	Black
+!*HelpDialog*helpText.background:        #eeeee0
+*HelpDialog*helpText.rows:		20
+*HelpDialog*helpText.columns:		80
+!*HelpDialog*helpText.highlightColor:	Yellow
+*HelpDialog*helpText.translations:	#override \n\
+		~Ctrl<Key>F29:		previous-page()\n\
+		~Ctrl<Key>F35:		next-page()
+*HelpDialog*helpOk.labelString:		OK
+!*HelpDialog*helpOk.foreground:		Black
+!*HelpDialog*helpOk.background:		#c0c0c0
+!
+!	Ctrl<Key>B:		previous-page()\n\
+!	Ctrl<Key>F:		next-page()\n\
+*text_w.translations:	#override \n\
+	~Shift Ctrl<Key>T:		Delete-next-word()\n\
+	~Shift Ctrl<Key>J:		Delete-previous-word()\n\
+	Alt<Key>D:			delete-line()\n\
+        Shift Ctrl<Key>L:       	delete-line()\n\
+	Ctrl<Key>E:			delete-to-end-of-line()\n\
+	Alt<Key>I:			show-info()\n\
+	Ctrl<Key>semicolon:		replace-find-string()\n\
+	~Shift ~Ctrl<Key>Home:		beginning-of-line()\n\
+	~Shift ~Ctrl<Key>End:		end-of-line()\n\
+	~Ctrl<Key>osfPrior:		previous-page()\n\
+	~Ctrl<Key>osfNext:		next-page()\n\
+	~Shift Ctrl<Key>Home:		beginning-of-file()\n\
+	~Shift Ctrl<Key>End:		end-of-file()\n\
+	<Key>F11:			beginning-of-file()\n\
+	<Key>F12:			end-of-file()\n\
+	Ctrl<Key>osfPrior:		move-top()\n\
+	Ctrl<Key>osfNext:		move-bottom()\n\
+	Ctrl<Key>U:			UndoAll()\n\
+	<Key>SunUndo:			UndoLast()\n\
+        <Key>SunAgain:			RedoAction()\n\
+        ~Shift Ctrl<Key>Z:		UndoLast()\n\
+	Shift Ctrl<Key>Z:       	RedoAction()\n\
+	Ctrl<Key>Y:			RedoAction()\n\
+	<Key>SunCopy:			copy-clipboard()\n\
+	<Key>SunPaste:			paste-clipboard()\n\
+	<Key>SunCut:			cut-clipboard()\n\
+	Ctrl<Key>C:			copy-clipboard()\n\
+	Ctrl<Key>V:			paste-clipboard()\n\
+	Ctrl<Key>X:			cut-clipboard()\n\
+	~Ctrl<Key>Return:		newline-and-indent()\n\
+	Ctrl<Key>Return:		newline()\n\
+	Ctrl<Key>osfLeft:		word-left()\n\
+	Ctrl<Key>osfRight: 		word-right()\n\
+	Ctrl<Key>comma:			block-unindent()\n\
+	Ctrl<Key>period: 		block-indent()\n\
+	Ctrl<Key>osfUp:			scroll-one-line-down()\n\
+	Ctrl<Key>osfDown:		scroll-one-line-up()\n\
+	<Key>Tab:			process-tab()\n\
+	Ctrl<Key>K:			process-Ctrl-K()\n\
+	Ctrl<Key>Q:			process-Ctrl-Q()\n\
+	Ctrl<Key>P:			process-Options()\n\
+	~Shift ~Ctrl<Key>F27:		beginning-of-line()\n\
+	~Shift ~Ctrl<Key>R13:		end-of-line()\n\
+	~Shift Ctrl<Key>F27:		beginning-of-file()\n\
+	~Shift Ctrl<Key>R13:		end-of-file()\n\
+        Ctrl<Key>F29:           	move-top()\n\
+        Ctrl<Key>F35:           	move-bottom()\n\
+	<Key>F14:			UndoLast()\n\
+	<Key>F16:			copy-clipboard()\n\
+	<Key>F18:			paste-clipboard()\n\
+	<Key>F20:			cut-clipboard()\n\
+	<Key>F7:			find-string(forward)\n\
+	<Key>F8:			find-string(backword)\n\
+        Ctrl<Key>bracketleft:		word-left()\n\
+        Ctrl<Key>bracketright:		word-right()\n\
+	<FocusIn>:			traverse-home()
